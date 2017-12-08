@@ -8,11 +8,11 @@ outline: none;
 #movies img, #movie img{
 	width: 100%;
 
-}/*
-@media (min-width:960px){
-#movies .col-md-3 .well{
-	height: 400px;
 }
-#movies .col-md-3 img{
+@media (min-width:960px){
+#movies .col-md-4 .well{
+	height: 300px;
+}
+#movies .col-md-4 img{
 	height: 240px;
-}*/
+}

@@ -27,7 +27,7 @@ function getMovies(searchText){
      <div class="well text-center">
      <img src ="${movie.Poster}">
      <h5>${movie.Title}</h5>
-     <a onclick="movieSelected(${movie.imdbID})" class="btn btn-primary" href="#">Movie Details</a>
+     <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
      </div>
      </div>
     `;
@@ -46,7 +46,7 @@ function movieSelected(id){
   return false;
 }
 function getMovie(){
-  let movieId = sessionStorage.setItem('movieId');
+  let movieId = sessionStorage.getItem('movieId');
   axios.get('http://www.omdbapi.com?apikey=199ec0b9&i='+movieId)
   .then((response) => {
   console.log(response);
